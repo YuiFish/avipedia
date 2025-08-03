@@ -1,0 +1,58 @@
+ a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fcc-btn {
+  background-color: #199319;
+  color: white;
+  border-radius: 12px;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.fcc-btn:hover {
+  background-color: #223094;
+}
+
+.container {
+  background-color: #C1FF72;
+}
+
+.home-body {
+  min-height: 100vh; /* Usar el 100% de la altura de la ventana del navegador */
+  width: 100vw; /* Usar el 100% del ancho de la ventana del navegador */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/mante.jpg');
+  background-size: cover; /* Hacer que la imagen cubra todo el contenedor */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  padding: 2rem; /* Espacio alrededor del contenido */
+  box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+@media (max-width: 576px) {
+  .home-body {
+    padding: 1rem;
+  }
+  .home-body img {
+    width: 80vw;
+    height: auto;
+    float: none;
+    margin-bottom: 1rem;
+  }
+  .fcc-btn {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 12px 0;
+  }
+}
